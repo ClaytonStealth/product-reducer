@@ -1,6 +1,14 @@
 import React from "react";
 import "./ProductCard.css";
 const ProductCard = (props) => {
+  //editProduct
+  //returns {key: uuidv4(),
+      // id: 1,
+      // title: "Hogwarts Legacy",
+      // publisher: "Warner Bros.",
+      // genre: "Adventure",
+      // price: 59.99,
+    // }
   return (
     <div className='product-card'>
       <h2>
@@ -11,6 +19,7 @@ const ProductCard = (props) => {
       <p>Price: ${props.price}</p>
       {/* onClick should should trigger props.deleteProduct */}
       <button onClick={() => props.deleteProduct(props.id)}>Delete!</button>
+      <button onClick={() => props.editProduct()}>Edit</button>
     </div>
   );
 };
