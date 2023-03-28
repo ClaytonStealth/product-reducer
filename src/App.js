@@ -6,40 +6,35 @@ import { v4 as uuidv4 } from "uuid";
 function App() {
   const initialState = [
     {
-      key: uuidv4(),
-      id: 1,
+      id: uuidv4(),
       title: "Hogwarts Legacy",
       publisher: "Warner Bros.",
       genre: "Adventure",
       price: 59.99,
     },
     {
-      key: uuidv4(),
-      id: 2,
+      id: uuidv4(),
       title: "Destiny 2",
       publisher: "Bungie",
       genre: "FPS",
       price: 29.99,
     },
     {
-      key: uuidv4(),
-      id: 3,
+      id: uuidv4(),
       title: "The Last of Us",
       publisher: "Sony",
       genre: "Adventure",
       price: 59.99,
     },
     {
-      key: uuidv4(),
-      id: 4,
+      id: uuidv4(),
       title: "Total War: Warhammer",
       publisher: "Sega",
       genre: "Strategy",
       price: 49.99,
     },
-    {
-      key: uuidv4(),
-      id: 5,
+    { 
+      id: uuidv4(),
       title: "Dune",
       publisher: "Sony",
       genre: "Sci-Fi",
@@ -55,7 +50,7 @@ function App() {
         return (
           <ProductCard
             id={product.id}
-            key={product.key}
+            key={product.id}
             title={product.title}
             publisher={product.publisher}
             genre={product.genre}
