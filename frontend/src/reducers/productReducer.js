@@ -39,7 +39,7 @@ export default function productReducer(productState, action) {
       let newCard = {
         id: uuidv4(),
         title: payload.title,
-        publisher: payload.gamepublisher,
+        publisher: payload.publisher,
         studio: payload.studio,
         genre: payload.genre,
         price: payload.price,
@@ -59,8 +59,7 @@ export default function productReducer(productState, action) {
         };
       });
       console.log(newLoad);
-      let newProduct = [...newLoad, ...productState];
-      return newProduct;
+      return [...newLoad, ...productState];
     default:
       return productState;
   }
